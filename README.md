@@ -3,7 +3,7 @@
 [![Docker Pulls on DockerHub](https://img.shields.io/docker/pulls/marccarre/rust-sample-project.svg?maxAge=604800)](https://hub.docker.com/r/marccarre/rust-sample-project/)
 
 # rust-sample-project
-A cloud-native Rust sample project leveraging containers for build & release.
+A cloud-native Rust sample project leveraging containers for build & runtime.
 
 ### Features
 
