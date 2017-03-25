@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/marccarre/rust-sample-project.svg?branch=master)](https://travis-ci.org/marccarre/rust-sample-project)
-[![Docker Pulls on Quay](https://quay.io/repository/marccarre/rust-sample-project/status "Docker Repository on Quay")](https://quay.io/repository/marccarre/rust-sample-project)
-[![Docker Pulls on DockerHub](https://img.shields.io/docker/pulls/marccarre/rust-sample-project.svg?maxAge=604800)](https://hub.docker.com/r/marccarre/rust-sample-project/)
+[![Docker Pulls on Quay](https://quay.io/repository/marccarre/hello-rust/status "Docker Repository on Quay")](https://quay.io/repository/marccarre/hello-rust)
+[![Docker Pulls on DockerHub](https://img.shields.io/docker/pulls/marccarre/hello-rust.svg?maxAge=604800)](https://hub.docker.com/r/marccarre/hello-rust/)
 
 # rust-sample-project
 A cloud-native Rust sample project leveraging containers for build & runtime.
