@@ -1,0 +1,28 @@
+[package]
+name = "hello-rust"
+version = "1.0.0"
+authors = ["Marc Carre <carre.marc@gmail.com>"]
+description = "Hello, Rust! -- A cloud-native Rust sample project leveraging containers for build & release."
+license = "Apache License Version 2.0"
+repository = "https://github.com/marccarre/rust-sample-project"
+readme = "README.md"
+keywords = ["rust", "sample", "project", "rustc", "cargo", "docker", "cloud", "cloud-native", "cloud native"]
+
+[dependencies]
+# Add dependencies here.
+
+[profile.dev]
+opt-level = 0
+debug = true
+
+[profile.test]
+opt-level = 3
+debug = false
+
+[profile.release]
+opt-level = 3
+debug = false
+
+[profile.doc]
+opt-level = 0
+debug = true
