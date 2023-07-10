@@ -1,0 +1,4 @@
+# The below files should NOT be copied to the (build and runtime) Docker images:
+.gitignore
+README.md
+target/
