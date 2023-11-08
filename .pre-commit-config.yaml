@@ -1,6 +1,7 @@
+---
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: check-byte-order-marker
       - id: check-case-conflict
@@ -11,13 +12,23 @@ repos:
       - id: mixed-line-ending
       - id: trailing-whitespace
   - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: v2.3.0
+    rev: v2.4.0
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
         args: []
+  - repo: https://github.com/zricethezav/gitleaks
+    rev: v8.18.0
+    hooks:
+      - id: gitleaks
+        args: [protect, --verbose, --redact, --staged]
+        stages: [commit]
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.6
+    hooks:
+      - id: codespell
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.35.0
+    rev: v0.37.0
     hooks:
       - id: markdownlint
   - repo: https://github.com/doublify/pre-commit-rust
@@ -26,9 +37,3 @@ repos:
       - id: fmt
       - id: cargo-check
       - id: clippy
-  - repo: https://github.com/zricethezav/gitleaks
-    rev: v8.17.0
-    hooks:
-      - id: gitleaks
-        args: [protect, --verbose, --redact, --staged]
-        stages: [commit]
